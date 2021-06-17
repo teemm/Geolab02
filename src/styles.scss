@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/scss/modules/variable.scss";
+@import "assets/scss/partials/reset.scss";
+@import "assets/scss/modules/mixins.scss";
+@import "assets/scss/partials/keyframes.scss";
+@import "assets/scss/modules/classes.scss";
+@import "assets/scss/partials/fonts.scss";
+@import "assets/scss/components/header.scss";
+@import "assets/scss/pages/main.scss";
+@import "assets/scss/partials/mobile.scss";
