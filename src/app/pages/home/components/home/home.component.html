@@ -1,0 +1,89 @@
+<!--<app-header></app-header>-->
+<main class="main">
+  <section class="banner-container">
+    <div class="container relative test-banner">
+      <img class="banner-img" src="assets/img/banner.png" alt="banner">
+      <img class="white-logo" src="assets/img/white-logo.svg" alt="logo">
+      <ul class="banner-ul">
+        <li class="banner-li">things aren't always</li>
+        <li class="banner-li">#000000</li>
+        <li class="banner-li">things aren't always</li>
+        <li class="banner-li">things aren't always</li>
+      </ul>
+    </div>
+  </section>
+  <section class="video-section">
+    <div class="container">
+      <h1 class="title-heading">
+        Featured | <a class="link" href="#">view all featured media</a>
+      </h1>
+      <div class="video-wrapper">
+        <iframe class="video-iframe" src="https://www.youtube.com/embed/TSdGUaHj3TA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <iframe class="video-iframe" src="https://www.youtube.com/embed/TSdGUaHj3TA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section class="newses-section">
+    <div class="container">
+      <h1 class="title-heading">
+        Featured | <a class="link" href="#">view all featured media</a>
+      </h1>
+      <div class="article-wrapper" *ngIf="data">
+        <a [routerLink]="['/details/', item.id]" class="article" *ngFor="let item of data">
+          <img [src]="item.img" [alt]="item.title">
+          <h1 class="article-title">{{item.title}}</h1>
+<!--          <span class="date">{{item.date}}</span>-->
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="feature-block">
+    <div class="container">
+      <h1 class="title-heading">
+        Featured | <a class="link" href="#">view all featured media</a>
+      </h1>
+      <div class="featured-wrapper">
+        <article class="feature-item">
+          <h1 class="title">Responsive Web Design</h1>
+          <div class="content-wrapper">
+            <img class="content-img inline-block vertical-top" src="../../../../img/finger.png" alt="finger"><!--
+                            --><p class="content-p inline-block vertical-top">approach that suggests that design and
+            development should respond to the user's behavior and environment based on screen size, platform and
+            orientation.</p>
+          </div>
+        </article>
+        <article class="feature-item">
+          <h1 class="title">Responsive Web Design</h1>
+          <div class="content-wrapper">
+            <img class="content-img inline-block vertical-top" src="../../../../img/finger.png" alt="finger"><!--
+                            --><p class="content-p inline-block vertical-top">approach that suggests that design and
+            development should respond to the user's behavior and environment based on screen size, platform and
+            orientation.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </section>
+  <div class="overlay">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-ul">
+        <li class="mobile-nav-li">
+          <a href="#" class="mobile-nav-a">HOME</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="mobile-social-ul">
+      <li class="mobile-social-li">
+        <a href="#" class="mobile-social-a">
+          <img src="assets/img/fb.svg" alt="fb">
+        </a>
+      </li>
+    </ul>
+  </div>
+</main>
+<!--<app-footer></app-footer>-->

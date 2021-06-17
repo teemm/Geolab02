@@ -1,0 +1,81 @@
+
+<div class="navigation-box gray">
+  <div class="container clearfix">
+    <ul class="navigation-box-ul float-left">
+      <li class="navigation-box-li inline-block">
+        <a href="#" class="navigation-box-a inline-block">contact</a>
+      </li>
+      <li class="navigation-box-li inline-block">
+        <a href="#" class="navigation-box-a inline-block">news 1</a>
+      </li>
+    </ul>
+    <ul class="see-next-ul float-right">
+      <li class="see-next-li">
+        <a href="#" class="see-next-a">see next</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<article class="new-artcle container" *ngIf="printData">
+  <div class="date-block">
+    <span class="date">{{printData.date | date: 'dd'}}</span>
+    <span class="month">{{printData.date | date: 'MMM'}}</span>
+  </div>
+  <h1 class="new-title">{{printData.title | uppercase}}</h1>
+  <div class="article-text-wrapper">
+    <img class="float-left new-article-img" [src]="printData.img" [alt]="printData.title">
+    <p class="article-text-p">{{printData.longText}}</p>
+  </div>
+</article>
+<div class="reseurce-tag">
+  <div class="container reseurce-tag-wrapper">
+    <a class="left-block" href="#">go back</a>
+    <ul class="recurse-tag-ul">
+      <li class="recurse-tag-li">
+        <a href="#" class="recurse-tag-a">
+          <img class="recurse-tag-img" src="img/fb-share.svg" alt="fb-share">
+        </a>
+      </li>
+      <li class="recurse-tag-li">
+        <a href="#" class="recurse-tag-a">
+          <img class="recurse-tag-img" src="img/fb-share.svg" alt="fb-share">
+        </a>
+      </li>
+      <li class="recurse-tag-li">
+        <a href="#" class="recurse-tag-a">
+          <img class="recurse-tag-img" src="img/fb-share.svg" alt="fb-share">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<section class="feature-block">
+  <div class="container">
+    <h1 class="title-heading">
+      Featured | <a class="link" href="#">view all featured media</a>
+    </h1>
+    <div class="featured-wrapper">
+      <article class="feature-item">
+        <h1 class="title">Responsive Web Design</h1>
+        <div class="content-wrapper">
+          <img class="content-img inline-block vertical-top" src="../../../../img/finger.png" alt="finger"><!--
+                            --><p class="content-p inline-block vertical-top">approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.</p>
+        </div>
+      </article>
+      <article class="feature-item">
+        <h1 class="title">Responsive Web Design</h1>
+        <div class="content-wrapper">
+          <img class="content-img inline-block vertical-top" src="../../../../img/finger.png" alt="finger"><!--
+                            --><p class="content-p inline-block vertical-top">approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+</section>
+
+<!--<form>-->
+<!--  <input type="text" name="username">-->
+<!--  <input type="password" name="password">-->
+<!--</form>-->
+
